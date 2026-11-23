@@ -1,0 +1,33 @@
+id = "item_scroller"
+kind = "mod"
+name = "Item Scroller"
+summary = "Move items with the mouse wheel, sort chests with one key, and refill crafting grids from saved recipes."
+description = """
+Item Scroller gives you shortcuts for moving items between your inventory and an open container in Horizon.
+
+- **Move items with the wheel.** Hover over a stack and scroll up to send one item to the other inventory. Scroll down to pull one back. Hold Shift to move a stack or Ctrl to move all matching stacks.
+- **Move several stacks at once.** Hold Shift and drag across slots with the left mouse button to move each stack. Use the right button to leave one item in each slot.
+- **Sort a chest.** Hover over its slots and press R to merge matching stacks and sort the contents.
+- **Reuse crafting recipes.** Middle-click a crafting result to save its ingredient layout. Hold S to open your 18 recipe slots, then click a saved recipe to refill the grid.
+
+Requires Horizon mod API 0.2 and runs client-side. Controls are rebindable, and the interface supports English and Russian.
+
+Horizon port by **caskh**, based on [Sakura-Ryoko’s Java version](https://github.com/sakura-ryoko/itemscroller/tree/26.3) of [masa’s original Item Scroller](https://github.com/maruohon/itemscroller).
+"""
+authors = ["caskh"]
+owners = ["caskh"]
+owner_ids = [194096617]
+license = "LGPL-3.0-only"
+source = "https://github.com/caskh/item-scroller"
+icon = "icons/item_scroller.png"
+categories = ["utility", "storage", "management"]
+tags = ["inventory", "storage", "sorting", "crafting", "item-transfer", "mouse-wheel", "recipe-memory", "client-side", "quality-of-life"]
+key = "RWR5VyGz8HewUdY5eOVOa0F5QKhlgvHmXqF+Hnk842B/iYtyKYb4BjNc"
+
+[[versions]]
+version = "0.4.6"
+published = "2026-11-23"
+game = "26.3"
+file = "item_scroller-0.4.6.hmod"
+sha256 = "375be48e4264dd1732f8732be97e62369147f712ae3c7c752120e2e3daffcd93"
+changelog = "Saving updates only the selected recipe slot. A failed save preserves existing recipes and shows an error in English or Russian."
