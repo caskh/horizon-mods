@@ -31,3 +31,8 @@ game = "26.3"
 file = "item_scroller-0.4.6.hmod"
 sha256 = "375be48e4264dd1732f8732be97e62369147f712ae3c7c752120e2e3daffcd93"
 changelog = "Saving updates only the selected recipe slot. A failed save preserves existing recipes and shows an error in English or Russian."
+signature = """
+untrusted comment: signature from minisign secret key
+RUR5VyGz8HewUenoZ57ZFlxN68CjFI+l0rRJ+B2plV7o1DFgugAPHUybAuoK/EanV8bWXQjRYwXj3DFDWgG61BYXTG8BOsBHuQ8=
+trusted comment: timestamp:1795419337	file:item_scroller.hmod	hashed
+HBl8ICdKY/Op6hTQ1yVAMQGEeUXkpz/LoposFY2LBa46fXndml4QRrv+eOxI1Mh1TTbpeGBJFdTXfIIW4QLZDA=="""
