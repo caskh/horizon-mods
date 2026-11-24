@@ -1,19 +1,36 @@
 id = "item_scroller"
 kind = "mod"
 name = "Item Scroller"
-summary = "Move items with the mouse wheel, sort chests with one key, and refill crafting grids from saved recipes."
+summary = "Move items with the mouse wheel, sort inventories, refill saved crafting recipes, and repeat villager trades with configurable shortcuts."
 description = """
-Item Scroller gives you shortcuts for moving items between your inventory and an open container in Horizon.
+## Item Scroller for Horizon
 
-- **Move items with the wheel.** Hover over a stack and scroll up to send one item to the other inventory. Scroll down to pull one back. Hold Shift to move a stack or Ctrl to move all matching stacks.
-- **Move several stacks at once.** Hold Shift and drag across slots with the left mouse button to move each stack. Use the right button to leave one item in each slot.
-- **Sort a chest.** Hover over its slots and press R to merge matching stacks and sort the contents.
-- **Reuse crafting recipes.** Middle-click a crafting result to save its ingredient layout. Hold S to open your 18 recipe slots, then click a saved recipe to refill the grid.
+Item Scroller is a client-side inventory utility for Horizon. It adds mouse and keyboard shortcuts for transferring items, sorting inventories, reusing crafting recipes, and repeating villager trades.
 
-Requires Horizon mod API 0.2 and runs client-side. Controls are rebindable, and the interface supports English and Russian.
+### Features
 
-Horizon port by **caskh**, based on [Sakura-Ryoko’s Java version](https://github.com/sakura-ryoko/itemscroller/tree/26.3) of [masa’s original Item Scroller](https://github.com/maruohon/itemscroller).
-"""
+- **Inventory transfers.** Hover over a slot and scroll up to send one item to the other inventory, or scroll down to pull one back. Hold **Shift** to move a stack or **Ctrl** to move matching stacks. Drag across slots to transfer several stacks in one gesture.
+- **Inventory sorting.** Press **R** over a supported inventory to merge matching stacks and sort its contents. Choose a sorting method and set custom item priorities.
+- **Recipe memory.** Save up to **18 crafting recipes** per Horizon profile. Middle-click a crafting result to save its ingredient layout, then hold **S** and select a saved recipe to refill the grid from your inventory. Additional shortcuts support repeated crafting and moving or dropping the results.
+- **Villager trading.** Right-click a trade result to repeat the selected offer with the payment items you have. Middle-click a payable result to save or remove a profile-wide favorite. A star identifies matching favorite trades across villagers.
+
+### Configuration
+
+Gameplay shortcuts start disabled. To use them, turn on **Enable gameplay shortcuts** in **Mods → Item Scroller → Config**. Some multiplayer servers may disallow these shortcuts or flag them with anticheat. Check the server rules before enabling them.
+
+In single-player, pause with **Esc**, then press **Ctrl + Alt + I** to open the keybind editor. On multiplayer servers, use the shortcut while playing. Click a binding to capture a key combination, or open **Options** to select a key and modifiers from a list.
+
+Use **Mods → Item Scroller → Config** to adjust scroll direction, sorting, and individual gameplay features. The shortcuts above are the defaults.
+
+### Requirements and languages
+
+Requires **Horizon mod API 0.2**. Item Scroller runs on the client as a WebAssembly mod.
+
+Available in English, Russian, Spanish, Korean, Dutch, Ukrainian, Simplified Chinese, and Traditional Chinese.
+
+### Credits
+
+The Horizon port is maintained by **caskh**. It is based on **Sakura-Ryoko’s** Java 26.3 branch of the original Item Scroller by **masa**. [Horizon port](https://github.com/caskh/item-scroller) · [Java 26.3 branch](https://github.com/sakura-ryoko/itemscroller/tree/26.3) · [Original Java project](https://github.com/maruohon/itemscroller)"""
 authors = ["caskh"]
 owners = ["caskh"]
 owner_ids = [194096617]
@@ -23,6 +40,19 @@ icon = "icons/item_scroller.png"
 categories = ["storage", "management", "utility"]
 tags = ["inventory", "storage", "sorting", "crafting", "item-transfer", "mouse-wheel", "recipe-memory", "client-side", "quality-of-life"]
 key = "RWR5VyGz8HewUdY5eOVOa0F5QKhlgvHmXqF+Hnk842B/iYtyKYb4BjNc"
+
+[[versions]]
+version = "0.5.1"
+published = "2026-11-24"
+game = "26.3"
+file = "item_scroller-0.5.1.hmod"
+sha256 = "997fbf4f3165ff218d791ff7f6fa9821e51d7aa98e668c2e54b28cb89908facb"
+signature = """
+untrusted comment: signature from minisign secret key
+RUR5VyGz8HewUU4z13NVE2K77Ua2wRVq5F0oR8xPlsyI7rQbcymMaLFlv0j1B3CSNjisNcPYqd6IT6zTme4IryesQrQNz+ozywg=
+trusted comment: timestamp:1795534685\tfile:item_scroller-0.5.1.hmod\thashed
+BcUUizJyEzuxahRpIoLd2wie2OgdKfU41ZVN5rLwoMBhwqd6u1qPBASzLYOX7luWyHUMtWWNWgWsnWFyJhXEDA=="""
+changelog = "Gameplay shortcuts start disabled and require explicit opt-in. Configuration remains available while shortcuts are off. This update also adds a dedicated keybind editor, bulk villager trades, global trade favorites, and six new translations."
 
 [[versions]]
 version = "0.4.7"
